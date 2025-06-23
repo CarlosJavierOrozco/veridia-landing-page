@@ -79,3 +79,44 @@ body{
     color: var(--color-primary);
     transition: all 0.3s ease-in-out;
 }
+
+.hero{
+    background-image: linear-gradient(rgba(255, 250, 250, 0.9), rgba(255, 255, 255, 0.92)), url(assets/natureza.jpg);
+}
+.hero .container{
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+}
+
+.hero h1{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.hero p{
+    font-size: 1.2em;
+    width: 70%;
+    margin-bottom: 2em;
+}
+
+
+
+.btn{
+    background-color: var(--color-primary);
+    padding: 1em 2em;
+    border-radius: 10px;
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--color-primary-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+    transition: all .3s ease-in-out;
+}
