@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Estilos Menu Hamburguesa-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" integrity="sha512-+mlclc5Q/eHs49oIOCxnnENudJWuNqX5AogCiqRBgKnpoplPzETg2fkgBFVC6WYUVxYYljuxPNG8RE7yBy1K+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Normalize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Mis estilos -->
@@ -19,14 +21,22 @@
     <header class="main-header">
         <div class="container">
             <a href="" class="logo"><span>Veridia</span><span class="dot">.</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li class="link"><a href="#">Inicio</a></li>
-                    <li class="link"><a href="#">Características</a></li>
-                    <li class="link"><a href="#">Nosotros</a></li>
-                    <li class="link"><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+            <aside class="panel">
+                <nav>
+                    <ul class="nav-links">
+                        <li ><a href="#">Inicio</a></li>
+                        <li ><a href="#">Características</a></li>
+                        <li ><a href="#">Nosotros</a></li>
+                        <li ><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <button class="btn-menu hamburger hamburger--spin" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
         </div>
 
     </header>
@@ -40,6 +50,8 @@
             </div>
         </section>
     </main>
+
+    <script src="script.js" type="module"></script>
        
 </body>
 </html>
