@@ -36,20 +36,47 @@
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-
+            <button class="lang" aria-label="Cambiar idioma, idioma actual: Español">ES</button>
         </div>
 
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero">        
             <div class="container">
                 <h1>Tecnología que impulsa un futuro sostenible.</h1>
-                <p>En Veridia, creamos soluciones innovadoras que respetan nuestro planeta. Únete a la revolución verde.</p>
+                <p>En Veridia, creamos soluciones innovadoras que respetan nuestro planeta. <em>Únete a la revolución verde.</em></p>
                 <a href="#" class="btn">Descubre como</a>
+                    <picture class="image-hero">
+
+                        <source 
+                            media="(max-width: 480px)"
+                            srcset="assets/natureza-640w.jpg 640w, assets/natureza-960w.jpg 960w"
+                            sizes="100vw">
+                        
+                        <source 
+                            media="(max-width: 1024px)"
+                            srcset="assets/natureza-960w.jpg 960w, assets/natureza-1280w.jpg 1280w"
+                            sizes="100vw">
+                        
+                        <source 
+                            media="(min-width: 1025px)"
+                            srcset="assets/natureza-1280w.jpg 1280w, assets/natureza-1920w.jpg 1920w"
+                            sizes="100vw">
+                        
+                        <img 
+                            src="assets/natureza-1920w.jpg" 
+                            alt="Naturaleza sostenible"
+                            loading="lazy">
+                    </picture>
+
+ 
             </div>
         </section>
     </main>
+
+
+
 
     <script src="script.js" type="module"></script>
        
