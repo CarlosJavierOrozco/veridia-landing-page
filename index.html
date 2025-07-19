@@ -111,11 +111,51 @@
                 </div>
             </div>        
         </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="image-wrapper"> <!-- Nuevo contenedor para controlar el aspect ratio -->
+                    <picture class="image-about">
+                        <source 
+                            media="(max-width: 480px)"
+                            srcset="assets/about640w.jpg 640w, assets/about960w.jpg 960w"
+                            sizes="100vw">
+                        
+                        <source 
+                            media="(max-width: 1024px)"
+                            srcset="assets/about960w.jpg 960w, assets/about1280w.jpg 1280w"
+                            sizes="100vw">
+                        
+                        <source 
+                            media="(min-width: 1025px)"
+                            srcset="assets/about1280w.jpg 1280w, assets/about1920w.jpg 1920w"
+                            sizes="100vw">
+                        
+                        <img 
+                            src="assets/about.jpg" 
+                            alt="Naturaleza sostenible"
+                            loading="lazy">
+                    </picture>
+                </div>
+
+                <h2>Un equipo comprometido con el cambio</h2>
+                <p>Somos un grupo diverso de ingenieros, diseñadores y ecologistas con una misión en común: utilizar el poder de la tecnología para resolver los desafíos medioambientales más apremiantes de nuestro tiempo.
+                  
+                  </p>
+                  <p>  Creemos en la colaboración, la transparencia y en que las pequeñas acciones, impulsadas por la tecnología correcta, pueden generar un cambio global masivo.</p>
+            
+                <a href="#" class="btn">Conoce al equipo</a>
+            </div>
+        </section>
+
+
+        <section class="cta">
+            <div class="container">
+                <h2>¿Listo para empezar a construir un futuro más verde?</h2>
+                <a href="#" class="btn">Hablemos de tu proyecto</a>
+            </div>
+        </section>
     </main>
-
-    
-
-
 
     <script src="script.js" type="module"></script>
        
